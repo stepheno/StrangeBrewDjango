@@ -65,6 +65,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'StrangeBrew.urls'
 
+AUTH_PROFILE_MODULE = 'SNB.UserProfile'
+
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
@@ -79,4 +81,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'StrangeBrew.SNB',
+    'registration',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7
