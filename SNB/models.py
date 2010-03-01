@@ -26,7 +26,7 @@ class UserProfile(models.Model):
 class Category(models.Model):
     category = models.CharField(max_length=25)
     name = models.CharField(max_length=100)
-    description = models.CharField(max_length=500,null=True,blank=True)
+    description = models.TextField(max_length=1000,null=True,blank=True)
 
     def __unicode__(self):
         return "%s - %s" % (self.category,self.name)

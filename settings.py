@@ -85,3 +85,11 @@ INSTALLED_APPS = (
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'oskar@oskarstephens.com'
+EMAIL_HOST_PASSWORD = 'EeCs04EE'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'oskar.stephens@gmail.com@localhost'
+LOGIN_REDIRECT_URL = '/'
+
