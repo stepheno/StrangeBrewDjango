@@ -1,4 +1,4 @@
-from StrangeBrew.SNB.models import Category,Entry,UserProfile
+from StrangeBrew.SNB.models import Category,Entry,UserProfile,Competition,Judging
 from django.contrib.auth.admin import UserAdmin,User
 from django.contrib import admin
 
@@ -37,5 +37,7 @@ class SNBUserAdmin(UserAdmin):
 
 admin.site.register(Entry,EntryAdmin)
 admin.site.register(Category)
+admin.site.register(Competition)
+admin.site.register(Judging)
 admin.site.unregister(User)
 admin.site.register(User,SNBUserAdmin)
